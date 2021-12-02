@@ -12,8 +12,9 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatListModule } from '@angular/material/list';
+import { HomeComponent } from './home/home/home.component';
 @NgModule({
-  declarations: [AppComponent, NavMenuComponent, FooterComponent],
+  declarations: [AppComponent, NavMenuComponent, FooterComponent, HomeComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
