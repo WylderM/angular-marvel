@@ -1,0 +1,64 @@
+<mat-sidenav-container class="sidenavContainer">
+  <mat-sidenav #drawer class="sidenav" mode="side" fixedInViewport="true">
+    <div fxLayout="column" class="container">
+      <div fxLayoutAlign="center center" class="perfilCharacter">
+        <div fxLayout="column">
+          <div fxLayoutAlign="center center">
+            <img
+              src="https://i.pinimg.com/originals/d9/3c/8c/d93c8c66597b481d0965421aefa37b68.jpg"
+            />
+          </div>
+          <br />
+          <div fxLayoutAlign="center center">
+            <h2 class="nameCharacter">Wolverine</h2>
+          </div>
+        </div>
+      </div>
+      <div class="menuLinks">
+        <br />
+        <mat-nav-list class="nav-list">
+          <a mat-list-item routerLink="home" (click)="drawer.toggle()">
+            <div class="iconMenu">
+              <mat-icon>home</mat-icon>
+            </div>
+            <div fxLayoutAlign="end">Inicio</div>
+          </a>
+
+          <a mat-list-item routerLink="characters" (click)="drawer.toggle()">
+            <div class="iconMenu">
+              <mat-icon>face</mat-icon>
+            </div>
+            <div fxLayoutAlign="end">Personagens</div>
+          </a>
+
+          <a mat-list-item routerLink="series" (click)="drawer.toggle()">
+            <div class="iconMenu">
+              <mat-icon>personal_video</mat-icon>
+            </div>
+            <div fxLayoutAlign="end">Séries</div>
+          </a>
+
+          <a mat-list-item routerLink="comics" (click)="drawer.toggle()">
+            <div class="iconMenu">
+              <mat-icon>menu_book</mat-icon>
+            </div>
+            <div fxLayoutAlign="end">Quadrinhos</div>
+          </a>
+        </mat-nav-list>
+      </div>
+    </div>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar class="navMenuToolbar">
+      <button
+        mat-icon-button
+        class="example-icon"
+        aria-label="Example icon-button with menu icon"
+        (click)="drawer.toggle()"
+      >
+        <mat-icon>menu</mat-icon>
+      </button>
+    </mat-toolbar>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

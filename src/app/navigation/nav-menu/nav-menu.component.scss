@@ -1,0 +1,45 @@
+.navMenuToolbar {
+  background-color: white;
+}
+.sidenav {
+  background-color: white;
+  width: 210px;
+  box-shadow: 0 0 1em #c3c3c3;
+}
+.perfilCharacter {
+  background-color: white;
+  height: 20%;
+  width: 100%;
+}
+
+.sidenavContainer {
+  background-color: black;
+}
+img {
+  border-radius: 50%;
+  height: 75px;
+  width: 70px;
+  margin-top: 10%;
+}
+.nameCharacter {
+  text-align: center;
+  color: #0b253f;
+  font-family: cursive;
+}
+.menuLinks {
+  height: 80%;
+  background-color: #0b253f;
+}
+.container {
+  width: 100%;
+  height: 100%;
+}
+.nav-list.a {
+  color: #ecd53e;
+}
+a.mat-list-item.mat-focus-indicator {
+  color: #ecd53e;
+}
+.iconMenu {
+  padding: 5px;
+}
